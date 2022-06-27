@@ -1,26 +1,37 @@
-import { Header } from './components/header';
-import { Post } from './Post';
+import { Header } from './components/Header';
+import { Post } from './components/Post';
+import { Sidebar } from './components/Sidebar';
 
-import "./global.css"
+import styles from "./App.module.css";
+
+import "./global.css";
 
 export function App() {
 
   return (
 
     <div>
-
       <Header />
+        <div className={styles.wrapper}>
 
-      <Post
-        author="Vinicius Benso"
-        content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem eum labore ullam facilis, debitis doloremque assumenda distinctio dolores fugiat laborum asperiores dolorem aliquam aliquid officia corporis esse praesentium qui?"  
-      /> 
-      <Post
-        author= "Paulinha"
-        content= "Lorem ipsum dolor sit amet consectet!"
+          <Sidebar />
 
-      />
-  
+            <main>
+              <Post 
+              author="Vinicius Benso"
+              content= "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur pariatur recusandae distinctio necessitatibus nam obcaecati magni tempora dolore ipsum non, illo perferendis ipsa reprehenderit ratione a assumenda fuga consectetur harum."
+
+              />
+              <Post 
+              author="Vinicius Benso"
+              content= "Lorem ipsum, dolor sit amet consectetur adipisicing elit. onsequuntur pariatur recusandae distinctio necessitatibus nam obcaecati magni tempora dolore ipsum non, ill perferendis ipsa reprehenderit ratione a assumenda fuga consectetur harum."
+            
+              />
+
+          </main>
+        
+        </div>
+
     </div>
 
   )
