@@ -22,11 +22,7 @@ export function App() {
               content= "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur pariatur recusandae distinctio necessitatibus nam obcaecati magni tempora dolore ipsum non, illo perferendis ipsa reprehenderit ratione a assumenda fuga consectetur harum."
 
               />
-              <Post 
-              author="Vinicius Benso"
-              content= "Lorem ipsum, dolor sit amet consectetur adipisicing elit. onsequuntur pariatur recusandae distinctio necessitatibus nam obcaecati magni tempora dolore ipsum non, ill perferendis ipsa reprehenderit ratione a assumenda fuga consectetur harum."
-            
-              />
+             
 
           </main>
         
